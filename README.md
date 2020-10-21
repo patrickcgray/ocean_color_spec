@@ -19,6 +19,17 @@ follow camera setup here: https://www.raspberrypi.org/documentation/configuratio
 From there instructions at https://blog.durablescope.com/post/BuiltASpectrometer/
 
 
+---
+
+Instructions for Photodiode based fluorometer
+
+Photodiode is: https://www.adafruit.com/product/1334
+
+Instructions for integration are: https://learn.adafruit.com/adafruit-color-sensors/arduino-code
+
+Datasheet for photodiode is: https://cdn-shop.adafruit.com/datasheets/TCS34725.pdf
+
+
 
 
 
