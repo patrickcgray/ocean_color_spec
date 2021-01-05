@@ -27,7 +27,18 @@ Photodiode is: https://www.adafruit.com/product/1334
 
 Instructions for integration are: https://learn.adafruit.com/adafruit-color-sensors/arduino-code
 
+Code is here: https://github.com/adafruit/Adafruit_CircuitPython_TCS34725/blob/master/adafruit_tcs34725.py
+
 Datasheet for photodiode is: https://cdn-shop.adafruit.com/datasheets/TCS34725.pdf
+
+Set up the rpi zero w as headless
+
+Install circuitpython on the rpi https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/installing-circuitpython-on-raspberry-pi
+
+had to solder a header onto the rpi and then soldered jumpers onto the photodiode
+
+
+Good example of another project https://diy-fluorometer.github.io/documentation/
 
 
 
