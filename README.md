@@ -1,13 +1,16 @@
 # ocean_color_spec
 
 ### Ocean Color Spec 2.0
-Using a Raspberry Pi 3B+ and the Adafruit AS7341 10-Channel Light / Color Sensor Breakout. Followed the instructions from: https://learn.adafruit.com/adafruit-as7341-10-channel-light-color-sensor-breakout to set it up, wire it in, and get the software running in python. This took my Pi over an hour to update and get everything installed so worth running this before you're properly caffienated and ready to make/hack.
+Using a Raspberry Pi 3B+ installed on a 32GB SD card using the Raspberry Pi installer (https://www.raspberrypi.com/software/) to install the October 2021 version of Raspberry Pi OS. Then set it up as a headless system via (https://www.raspberrypi.com/documentation/computers/configuration.html#setting-up-a-headless-raspberry-pi). This entails setting up a wpa_supplicant.conf and a ssh file. Then you will be able to connect via ssh (https://www.raspberrypi.com/documentation/computers/remote-access.html#ssh). Then had to run `ping raspberrypi.local` to find IP address (from here https://www.raspberrypi.com/documentation/computers/remote-access.html). You could also go to the IP address of your router (e.e 192.168.0.1) to find the raspberry pi on the list of devices.
+
+Installed CircuitPython on the rPi via https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/installing-circuitpython-on-raspberry-pi. I had to do an update `sudo apt full-upgrade` to get the CircuitPython script to run. Based on: https://gallaugher.com/makersnack-installing-circuitpython-on-a-raspberry-pi/. Then the script ran properly and the sensor could be read properly.
+
+
+This is all with the Adafruit AS7341 10-Channel Light / Color Sensor Breakout. Followed the instructions from: https://learn.adafruit.com/adafruit-as7341-10-channel-light-color-sensor-breakout to set it up, wire it in, and get the software running in python. This took my Pi over an hour to update and get everything installed so worth running this before you're properly caffienated and ready to make/hack.
 
 Overall goal is to have a system with three of these AS7341 sensors. One looking at the water, one at the sky, and one at a calibrated irradiance plaque (or a cheap 18% photographers grey card) in order to make calibrated measurements of ocean color. If used on a ship this system could be upgraded with a gimbal to get much more consistent measurements of Rrs with roll and pitch held constant.
 
 I will 3D print the housing to hold all three sensors, the plaque, and the raspberry pi in the correct viewing geometry. I'll possibly use a gimbal to hold it stable. I want to test the sensors for consistency across each other, uncertainty in time when viewing a consistent surface, and sensitivity to actually measuring ocean color considering how dark the water can be. A fourth sensor could be used for an in-situ calibrator if this is used on a fixed platform. Regardless I'd like to compare this to measurements made with the skylight blocked approach.
-
-
 
 
 
